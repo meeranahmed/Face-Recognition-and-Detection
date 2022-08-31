@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>881</width>
+    <height>385</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Face Recognition &amp; Detection</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>861</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="DetectionTab">
+     <attribute name="title">
+      <string>Face Detection</string>
+     </attribute>
+     <widget class="QPushButton" name="ImportButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>310</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Import Image</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="DetectionButton">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>310</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detect Face</string>
+      </property>
+     </widget>
+     <widget class="ImageView" name="Import" native="true">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>20</y>
+        <width>391</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="ImageView" name="Detection" native="true">
+      <property name="geometry">
+       <rect>
+        <x>439</x>
+        <y>20</y>
+        <width>391</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="RecognitionTab">
+     <attribute name="title">
+      <string>Face Recognition</string>
+     </attribute>
+     <widget class="QPushButton" name="RecogintionButton">
+      <property name="geometry">
+       <rect>
+        <x>604</x>
+        <y>310</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recognize Face</string>
+      </property>
+     </widget>
+     <widget class="ImageView" name="Recognition" native="true">
+      <property name="geometry">
+       <rect>
+        <x>439</x>
+        <y>20</y>
+        <width>391</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TestImageButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>310</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Import Test Image</string>
+      </property>
+     </widget>
+     <widget class="ImageView" name="TestImage" native="true">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>20</y>
+        <width>391</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageView</class>
+   <extends>QWidget</extends>
+   <header location="global">pyqtgraph.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
